@@ -19,7 +19,11 @@ export default{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   text-align: left;
+=======
+  text-align: center;
+>>>>>>> 97f9c9c (11)
   color: #2c3e50;
 }
 

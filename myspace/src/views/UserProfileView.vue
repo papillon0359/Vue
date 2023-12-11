@@ -2,6 +2,7 @@
     <ContentBase>
         <div class="row">
             <div class="col-3">
+<<<<<<< HEAD
                 <UserProfileInfo @follow="follow" @unfollow="unfollow" :user="user" />
                 <UserProfileWrite @post_a_post="post_a_post" />
             </div>
@@ -12,18 +13,33 @@
     </ContentBase>
 </template>
 
+=======
+                <UserProfileInfo/>
+            </div>
+            <div class="col-9">
+                <UserProfilePosts/>
+            </div> 
+        </div>
+    </ContentBase>
+</template>
+  
+>>>>>>> 97f9c9c (11)
 <script>
 import ContentBase from '../components/ContentBase';
 import UserProfileInfo from '../components/UserProfileInfo';
 import UserProfilePosts from '../components/UserProfilePosts';
+<<<<<<< HEAD
 import UserProfileWrite from '../components/UserProfileWrite';
 import { reactive } from 'vue';
+=======
+>>>>>>> 97f9c9c (11)
 
 export default {
     name: 'UserProfileView',
     components: {
         ContentBase,
         UserProfileInfo,
+<<<<<<< HEAD
         UserProfilePosts,
         UserProfileWrite,
     },
@@ -93,3 +109,12 @@ export default {
 
 <style scoped>
 </style>
+=======
+        UserProfilePosts
+    }
+}
+</script>
+  
+<style scoped>
+</style>
+>>>>>>> 97f9c9c (11)

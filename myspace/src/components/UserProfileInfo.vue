@@ -7,10 +7,16 @@
                         alt="">
                 </div>
                 <div class="col-9">
+<<<<<<< HEAD
                     <div class= "username">{{ fullName }}</div>
                     <div class= "fans">粉丝数:{{ user.followerCount }}</div>
                     <button @click="follow" v-if = "!user.is_followed" type="button" class="btn btn-secondary btn-sm">+关注</button>
                     <button @click="unfollow" v-if = "user.is_followed" type="button" class="btn btn-secondary btn-sm">取消关注</button>
+=======
+                    <div class="username">Guoxi Zhu</div>
+                    <div class='fans'>粉丝数:124</div>
+                    <button type="button" class="btn btn-secondary">+关注</button>
+>>>>>>> 97f9c9c (11)
                 </div>
             </div>
         </div>
@@ -18,6 +24,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import {computed} from 'vue';
 
 export default {
@@ -45,6 +52,10 @@ export default {
             unfollow,
         }
     }
+=======
+export default {
+    name: "UserProfileInfo"
+>>>>>>> 97f9c9c (11)
 }
 </script>
 
