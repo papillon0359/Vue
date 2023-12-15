@@ -4,7 +4,7 @@ import request from '@/utils/request'
 //获取掘进参数
 export function TunnellingList(data) {
   return request({
-    url: 'https://ca4ed109-95eb-4baf-ba09-8d5bccc3c3c6.mock.pstmn.io/api/Tunnelling',
+    url: 'https://feb5595f-266f-4a74-bd65-8dc489977261.mock.pstmn.io/api/Tunnelling',
     method: 'get',
     data
   })
@@ -20,7 +20,7 @@ export function TunnellingList(data) {
 //围岩感知信息
 export function SurroundingRock(data) {
   return request({
-    url: 'https://ca4ed109-95eb-4baf-ba09-8d5bccc3c3c6.mock.pstmn.io/api/GradingCurve',
+    url: 'https://feb5595f-266f-4a74-bd65-8dc489977261.mock.pstmn.io/api/GradingCurve',
     method: 'get',
     data
   })
@@ -29,12 +29,19 @@ export function SurroundingRock(data) {
 // 1.level 围岩级别
 // 2.strength  单轴抗压强度
 // 3.IntegrityCoefficient  完整性系数
-// 4.GradingCurve  集配曲线
-// 5.VibrationParameters  震动参数
+// 4.GradingCurve  级配曲线
+// 5.GradingParameters  级配参数
 /* {
       1.dmax
       2.cu
       3.Cc
       4.CI
+  }
+  6.VibrationParameters  震动参数
+  {
+    1.PPV
+    2.Ve
+    3.Va
+    4.RMS
   }
 */

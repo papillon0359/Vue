@@ -1,26 +1,18 @@
 <template>
     <ContentBase>
-<<<<<<< HEAD
         å¥½å‹åˆ—è¡¨
-=======
-        ºÃÓÑÁÐ±í
->>>>>>> 97f9c9c (11)
     </ContentBase>
 </template>
   
 <script>
 import ContentBase from '../components/ContentBase';
-<<<<<<< HEAD
 import $ from 'jquery';
 import { ref } from 'vue';
-=======
->>>>>>> 97f9c9c (11)
 
 export default {
     name: 'UserListView',
     components: {
         ContentBase,
-<<<<<<< HEAD
     },
     setup() {
         let users = ref([]);
@@ -36,8 +28,6 @@ export default {
         return {
             users,
         };
-=======
->>>>>>> 97f9c9c (11)
     }
 }
 </script>

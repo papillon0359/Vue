@@ -5,10 +5,7 @@ import UserProfileView from '../views/UserProfileView'
 import LoginView from '../views/LoginView'
 import RegisterView from '../views/RegisterView'
 import NotFoundView from '../views/NotFoundView'
-<<<<<<< HEAD
-=======
 import GetdataView from '../views/GetdataView'
->>>>>>> 97f9c9c (11)
 
 const routes = [
   {
@@ -41,14 +38,11 @@ const routes = [
     name: '404',
     component: NotFoundView
   },
-<<<<<<< HEAD
-=======
   {
     path: '/getdata',
     name: 'getdata',
     component: GetdataView
   }
->>>>>>> 97f9c9c (11)
 ]
 
 const router = createRouter({

@@ -1,23 +1,23 @@
 <template v-slot:dorpdown>
     <ContentBase>
       <el-form ref="form" :model="form" label-width="80px">
-        <el-form-item label="推进速度">
-          <el-input v-model="form.AdvanceSpeed"></el-input>
+        <el-form-item label="推进速度: ">
+          <el-text>{{form.AdvanceSpeed}}</el-text>
         </el-form-item>
-        <el-form-item label="总推力">
-          <el-input v-model="form.TotalThrust"></el-input>
+        <el-form-item label="总推力:">
+          <el-text >{{form.TotalThrust}}</el-text>
         </el-form-item>
-        <el-form-item label="刀盘转速">
-          <el-input v-model="form.KnifeSpeed"></el-input>
+        <el-form-item label="刀盘转速:">
+          <el-text>{{ form.KnifeSpeed }}</el-text>
         </el-form-item>
-        <el-form-item label="刀盘扭矩">
-          <el-input v-model="form.KnifeTorque"></el-input>
+        <el-form-item label="刀盘扭矩:">
+          <el-text >{{ form.KnifeTorque}}</el-text>
         </el-form-item>
-        <el-form-item label="灌入度">
-          <el-input v-model="form.PenetrationRate"></el-input>
+        <el-form-item label="灌入度:">
+          <el-text >{{ form.PenetrationRate }}</el-text>
         </el-form-item>
-        <el-form-item label="里程">
-          <el-input v-model="form.mileage"></el-input>
+        <el-form-item label="里程:">
+          <el-text>{{ form.mileage}}</el-text>
         </el-form-item>
       </el-form>
     </ContentBase>
@@ -61,7 +61,7 @@ export default {
               this.form.KnifeTorque= res.data.KnifeTorque
               this.form.PenetrationRate= res.data.PenetrationRate
               this.form.mileage= res.data.mileage
-              console.log(this.form.mileage)
+              console.log(this.mileage)
             })
             .catch((err) => {
               console.log(err);
